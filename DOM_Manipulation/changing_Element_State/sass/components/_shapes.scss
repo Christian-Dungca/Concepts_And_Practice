@@ -1,0 +1,65 @@
+.shapes-container {
+    background-color: black;
+    padding: 5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shapes {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__element {
+
+        margin: 1.4rem;
+
+        &--circle {
+            height: 20rem;
+            width: 20rem;
+            border-radius: 50%;
+            background: linear-gradient(
+                to right bottom, 
+                rgb(165, 105, 189), 
+                rgb(108, 52, 131)
+            );
+        }
+
+        &--square {
+            height: 20rem;
+            width: 20rem;
+            background: linear-gradient(
+                to right bottom, 
+                rgb(165, 105, 189), 
+                rgb(108, 52, 131)
+            );
+        }
+    }
+
+    &__btn-change {
+        
+        letter-spacing: 1.4px;
+        padding: .6rem 1.2rem;
+        border-radius: 4px;
+        font-size: 1.4rem;
+        color: #fff;
+        background-color: #117A65;
+        text-decoration: none;
+        
+        
+        &--circle {
+            
+        }
+        
+        &--square {
+            
+        }
+
+    }
+
+
+}

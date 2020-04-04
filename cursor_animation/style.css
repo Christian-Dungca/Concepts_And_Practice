@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    cursor: none;
+    padding: 0 5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 10vh;
+    margin: auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-links li {
+    padding: 1rem;
+    z-index: 10;
+}
+
+.nav-links,
+h1 {
+    flex: 1;
+}
+
+.cursor {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    /* make things selectable */
+    pointer-events: none;
+    transition: all .3s ease;
+    /* explicitly say what to be animated  */
+    transition-property:  background, transform;
+    /* the scale kinda goes down, so this forces it to stay where it's supposed to stay */
+    transform-origin: 100% 100%;
+    z-index: 5;
+}
+
+
+.section {
+    margin: 8rem auto;
+    width: 600px;
+    height: 400px;
+    background: url(./jase-bloor-oCZHIa1D4EU-unsplash.jpg);
+    background-size: cover;  
+    
+}
+
+/* trying to figure out how to make the backdrop filter effect only happen when the section portion is hovered */
+.section:hover ~ .cursor {
+}
+
+/* javascript add/remove classes */
+
+.link-grow {
+    transform: scale(2);
+    background: black;
+}
+
+.hovered-link {
+    color: #fff;
+}
+
+.background-blur {
+    backdrop-filter: grayscale();
+    transform: scale(3);
+    border: 1px solid black;
+}

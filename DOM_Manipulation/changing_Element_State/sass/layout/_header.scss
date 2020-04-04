@@ -1,0 +1,27 @@
+
+.header {
+    min-width: 100%;
+    display: flex;
+    background-color: black;
+    padding: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    
+    
+    &__main-title {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        margin: 1rem;
+        letter-spacing: 4px;
+    }
+
+    &__sub-title {
+        color: #fff;
+        // text-transform: uppercase;
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+    }
+}
